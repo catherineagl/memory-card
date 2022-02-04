@@ -1,0 +1,17 @@
+.modal {
+	padding: 1rem 5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	color: '#fff';
+	font-weight: bold;
+	background-color: crimson;
+	opacity: 0.9;
+	position: absolute;
+	color: white;
+	top: 10%;
+	right: 50%;
+	transform: translateX(50%);
+	border-radius: 0.5rem;
+	z-index: 5;
+	transition: all 0.5s ease;
+}

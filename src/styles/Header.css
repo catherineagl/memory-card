@@ -1,0 +1,22 @@
+header {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #2c3333;
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 1rem;
+}
+
+.score {
+	padding: 0.5rem 1rem;
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin: 0 1rem;
+	color: #ccc;
+}
+
+.score span {
+	color: white;
+	font-weight: bold;
+}

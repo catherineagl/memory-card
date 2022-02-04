@@ -1,5 +1,9 @@
 import React from 'react';
 
-export const HighScore = () => {
-	return <div>0</div>;
+export const HighScore = (props) => {
+	return (
+		<div className="score">
+			High score <span>{props.highScore}</span>
+		</div>
+	);
 };

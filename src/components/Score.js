@@ -1,5 +1,9 @@
 import React from 'react';
 
-export const Score = () => {
-	return <div>0</div>;
+export const Score = (props) => {
+	return (
+		<div className="score">
+			Score <span>{props.score}</span>
+		</div>
+	);
 };

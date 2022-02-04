@@ -1,13 +1,14 @@
 import React from 'react';
 import { HighScore } from './HighScore';
 import { Score } from './Score';
-
-export const Header = () => {
+import '../styles/Header.css';
+export const Header = (props) => {
+	const { score, highScore } = props;
 	return (
 		<header>
-			<h1>MARVEL MEMORY CARD</h1>
-			<Score />
-			<HighScore />
+			<h1>The Rick & Morty Memory Game</h1>
+			<Score score={score} />
+			<HighScore highScore={highScore} />
 		</header>
 	);
 };
