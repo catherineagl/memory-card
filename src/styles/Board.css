@@ -1,0 +1,14 @@
+.board {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+	padding: 100px;
+	margin: 20px;
+	background-color: red;
+}
+
+.card:nth-child(even) {
+	background-color: blue;
+}
