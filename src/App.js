@@ -20,10 +20,6 @@ function App() {
 	const randomArr = (ar) => ar.sort(() => Math.random() - 0.5);
 
 	useEffect(() => {
-		setTotalCards(randomArr(totalCards));
-	}, [cards]);
-
-	useEffect(() => {
 		const fetchData = async () => {
 			let url =
 				'https://rickandmortyapi.com/api/character/1,2,3,4,5,6,7,8,9,10';
@@ -44,6 +40,7 @@ function App() {
 	}, []);
 
 	const handleClick = (id) => {
+		setTotalCards(randomArr(totalCards));
 		if (cards.find((el) => el === id)) {
 			if (score > highScore) setHighScore(score);
 			setScore(0);
